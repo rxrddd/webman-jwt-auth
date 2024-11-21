@@ -18,6 +18,7 @@ class Jwt
 {
 
     public Token $token;
+    private Configuration $jwtConfiguration;
 
     public function __construct(protected JwtAuth $auth,protected $config,protected $manager)
     {
